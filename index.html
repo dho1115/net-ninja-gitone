@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles/style.css">
+
+   <title>Folder 1 Github project</title>
+</head>
+<body>
+   <header class="p-3 my-3 text-danger d-flex justify-content-center">
+      <h1>Git Folder 1</h1>
+   </header>
+
+   <h5>Stopped @ :28 of https://www.youtube.com/watch?v=KngvG8WzYLU&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=5</h5>
+
+   <article class="m-3 p-3">
+      <h3>How to configure your username & password in github:</h3>
+      <p><strong>git config --global user.name [your username]</strong></p>
+      <p><strong>git config --global user.email [your email]</strong></p>
+      <h5>To retrieve the user name:</h5>
+      <p><strong>git config user.name</strong></p>
+   </article>
+
+   <article class="m-3 p-3">
+      <h3>How to see which files are staged & which are committed:</h3>
+      <p><strong>git status</strong></p>
+      <h3>How to add a file to the commit:</h3>
+      <p><strong>git add [filename] or git add .</strong></p>
+   </article>
+
+   <article class="m-3 p-3">
+      <h3>Observation about <span class="text-danger">.gitignore (removing files from staging).</span>.</h3>
+      <p><strong>So, let's say I just added something to my staging area that I did not want to. What I did was, I just went into .gitignore, inserted that file (e.g. package-lock.json) and then that file was <i>automatically removed</i> from staging!!!</strong></p>
+   </article>
+
+   <article class="m-3 p-3">
+      <h3>Another way to remove files from staging.</h3>
+      <p><strong>git rm --cached filename.html (or .js or whatever extension).</file></strong></p>
+      <p><strong>What returns is rm 'filename' and you will see that file inside Changes if you click the icon on the left.</strong></p>
+   </article>
+
+   <article class="m-3 p-3">
+      <h3>If you make changes to a file <i>after</i> you git add the file:</h3>
+      <p><strong>Just do another git add [changed file].</strong></p>
+   </article>
+
+   <article class="m-3 p-3">
+      <h3>Committing a file:</h3>
+      <p><strong>git commit -m " ... ". The m stands for <i>message</i>.</strong></p>
+   </article>
+   
+   <footer class="p-3 m-3">
+      <p><strong>https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR</strong></p>
+   </footer>
+</body>
+</html>

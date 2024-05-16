@@ -1,0 +1,17 @@
+{
+  "name": "folderone",
+  "version": "1.0.0",
+  "description": "A folder to practice git.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "dh github",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "lite-server": "^2.6.1"
+  }
+}
