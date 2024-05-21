@@ -114,6 +114,20 @@
    <article class="m-3 p-3">
       <h3>How to <span class="text-danger">MERGE</span> a branch.</h3>
       <p><strong>git merge [branch you want to merge with].</strong></p>
+      <hr />
+      <h3>Addendum on git merge:</h3>
+      <ol>
+         <li>The <span class="text-danger">HEAD (Current Change)</span> is what you have on your current branch. In other words... what you see on your VS Code now.</li>
+         <li>The <span class="text-danger">Incoming Change</span> is what you are merging to. So, let's say you are on the MASTER branch and you do git merge branch-a. <i>branch-a</i> would be the incoming change.</li>
+         <li>The best way is to make the change ON THE SCREEN. Remove the HEAD and INCOMING CHANGE comments and then delete what you want. So, if you do NOT want the incoming change, you delete the blue (incoming change).</li>
+         <li>Click the "resolve in merge editor" on the right of the screen.</li>
+         <li>You will see three panes. The RESULT is what the current code on that branch is.</li>
+         <li>Notice the code that is highlighted in <span class="text-success">GREEN</span> in the RESULT pane. If you click <strong>REMOVE CURRENT</strong>, what is highlighted in green in the RESULT pane will go away and the resulting code will be the code for <i>that</i> branch.</li>
+         <li>In the upper right is the <i>Current</i> branch. This is how your branch <i>originally</i> looks like. The <i>Result</i> pane may or may not look like the Current pane depending on whether you click <strong>Remove Current</strong>. Once you click <strong>Remove Current</strong>, any current code that was originally in your current branch will go away.</li>
+         <li>After you click <strong>Remove Current</strong> in the Result, notice that in the <i>Current</i> branch (upper right), there is now an <strong>Accept Current</strong>. So, if you change your mind and want to Accept Current after Removing Current in the Result, you can do it.</li>
+         <li>The upper left pane is the <i>Incoming</i> pane. This is the code from the branch you want to merge <i>with</i>. For instance... let's say you are on the MASTER branch and you want to merge with Branch-A via git merge Branch-A. Branch-A would be the <i>incoming</i> branch. If you click <strong>ACCEPT COMBINATION</strong> in the incoming pane (upper left) and you have conflicting code (e.g.: style=red in incoming and style=green in current), the incoming will <i>override</i> the current (so the red will override the green).</li>
+         <li>If, in the <i>incoming</i> pane in the upper left, you select <strong>Accept Incoming</strong> and you have conflicting code (e.g.: style=red in incoming and style=green in current for css), the red will <strong><i>not</i></strong> override the green (the current style for the branch you are on). Instead, it will <i>add</i> to the style, so now, you will have in your css code, both color=red AND color=green. You can then choose in your Result pane to either <strong>Remove Incoming</strong> (color) or <strong>Remove Current</strong> color (no use keeping both colors in CSS).</li>
+      </ol>
    </article>
    
    <footer class="p-3 m-3">
